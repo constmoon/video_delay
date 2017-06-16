@@ -37,7 +37,7 @@ void ofApp::setup(){
     maxRows = 3;
     
     // video size to get from camera
-    // be careful to the ratio
+    // be careful with cam's ratio
     camWidth = ofGetWidth()/maxCols;
     camHeight = ofGetHeight()/maxRows;
     webcam.initGrabber(camWidth, camHeight);
