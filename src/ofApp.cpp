@@ -1,11 +1,8 @@
 /*
- * Copyright (c) 2016 by Jiwoo Kang
- *
  * Making a Random Video Array with openFrameworks
  * Get video from connected devices, and print it out randomly through an array.
  * The maximum number of outputs(col*row) can be modified through variables.
  * Note that as the maximum number of images increases, there is a slight delay while initialing the array.
- * 
  *
  */
  
