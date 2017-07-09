@@ -54,16 +54,14 @@ void ofApp::update(){
     webcam.update();
     
     // If there is a new frame through camera
-    // convert to ofTexture
-    // and save in imgs vector
+    // convert to ofTexture, and save in imgs vector
     if(webcam.isFrameNew()){
         ofPixels pixels = webcam.getPixels();
         
         ofTexture currentFrame;
         currentFrame.allocate(pixels);
         
-        // push_back in 'vector object'
-        // and save new frame
+        // push_back in vector object, and save new frame
         // if img num is over than maxNumImgs, erase the img which was saved first
         imgs.push_back(currentFrame);
         if(imgs.size() > maxNumImgs){
